@@ -1,0 +1,142 @@
+:root {
+    --primary-bg: #f5f5f7; /* Light grey background */
+    --card-bg: #ffffff; /* White card background */
+    --accent-color: #7d40e1; /* Purple/Violet for the button */
+    --text-color: #4a4a4a;
+    --heading-color: #1e1e1e;
+}
+
+/* Basic Reset and Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-bg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Start content from the top */
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Max width to mimic the mobile/centered layout */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* --- Header/Logo Section --- */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo-icon {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Styling the SVG placeholder to look like the image's logo */
+.head-icon {
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #4f85e3, #7d40e1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 5px; /* Creates the outer color rings effect */
+}
+
+.main-title {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: var(--heading-color);
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* --- Tagline Section --- */
+.tagline-section h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+}
+
+.tagline-section p {
+    font-size: 0.9em;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.download-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 15px rgba(125, 64, 225, 0.4);
+}
+
+.download-btn:hover {
+    background-color: #6a34cc;
+}
+
+/* --- Install Card Section --- */
+.install-card {
+    background-color: #e5e5e5; /* Slightly darker background for the card */
+    color: var(--text-color);
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 50px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.download-icon {
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.install-steps {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.install-steps li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.install-steps li:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 40px;
+    font-size: 0.75em;
+    color: #999;
+}
